@@ -84,7 +84,32 @@ The EDA step has the goal to gain a deeper understanding of the business, genera
 ### **Step 10: Deployment**
 
 
-## 4. Top 5 insights
+## 4. Top Insights
+
+### Insight 01
+While the initial hypothesis suggests that stores with larger assortments will sell more, the analysis reveals that the opposite is true: stores with greater assortments actually sell less.
+
+This revised version clarifies the contrast between the expected outcome (more sales with more products) and the actual outcome (less sales with more products).
+
+![image](https://user-images.githubusercontent.com/100521949/233478003-a0b80c0d-c431-4b60-a413-7b1c52c1a244.png)
+
+### Insight 02
+Stores with closest competitors sell more.
+
+![image](https://user-images.githubusercontent.com/100521949/233478164-60e64585-e80c-4093-a253-25ac474f6fe4.png)
+
+### Insight 03
+Stores with competitors for a longer time sell less.
+
+![image](https://user-images.githubusercontent.com/100521949/233478269-8dbe9be3-f4e5-422b-b300-a10fc20318f0.png)
+
+### Insight 04
+Stores that joined the extended period of promotion sell less.
+
+![image](https://user-images.githubusercontent.com/100521949/233478767-275d8b65-13cf-496b-bf87-c9a1ccf0a1e0.png)
+
+
+
 
 ## 5. Machine Learning Models Applied
 
