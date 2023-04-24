@@ -158,13 +158,24 @@ Once it was determined that the problem was nonlinear, the next step was to sele
 > The advantage of cross-validation is that it allows for a more reliable estimate of the model's performance, since it uses all of the data for training and validation. This can help to avoid overfitting or underfitting the model to the dataset.
 
 
-## 8. Business Results
+## 8. Deployment
 
-## 9. Conclusion
+Once the solution has been validated, the CFO needs to be able to access the model for consultation. To achieve this, two APIs were developed: the Rossmann API, which receives user input regarding the store to be consulted and filters the corresponding data from the test dataset, and the Handler API, which utilizes the Data Preparation file to process the data and enable the trained model to make accurate predictions. The Handler API then returns the prediction to the Rossmann API, which delivers the result to the end user, as depicted in the diagram below.
 
-## 10. Lessons Learned
+![bot](https://user-images.githubusercontent.com/100521949/234112895-4848f33e-deb4-4b45-8c5c-055d0efd0494.png)
 
-## 11. Next Steps
+The Telegram Bot can be accessed through [this link](https://t.me/myRossmann_bot) and the video below shows how it works.
+
+https://user-images.githubusercontent.com/100521949/234054958-b26f7501-ce30-4544-bd8f-a6176bdd69fa.mp4
+
+
+## 9. Business Results
+
+## 10. Conclusion
+
+## 11. Lessons Learned
+
+## 12. Next Steps
 
 The CRISP methodology is designed to deliver prompt solutions for businesses. Therefore, it is essential to assess the efficacy of the solution at the end of each cycle. With input from all stakeholders, it is important to determine whether to proceed with a new cycle or shift focus to a new project.
 
