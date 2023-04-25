@@ -185,6 +185,16 @@ https://user-images.githubusercontent.com/100521949/234054958-b26f7501-ce30-4544
 
 ## 9. Business Results
 
+Accurate sales predictions enable businesses to plan and budget more effectively, as they can estimate future revenue streams and allocate resources accordingly.
+In addition to the predicted sales amounts, I also calculated the percentage error of these predictions, and used it to determine the best and worst-case scenarios for each store, as demonstrated in the table below. Armed with this information, businesses can make more informed decisions.
+
+![image](https://user-images.githubusercontent.com/100521949/234406621-3300f406-e721-405b-9bed-b2b833ed5841.png)
+
+
+
+![image](https://user-images.githubusercontent.com/100521949/234406296-a6722bb9-8d95-463e-8aae-aef755dcecb6.png)
+
+
 
 
 ## 10. Conclusion
