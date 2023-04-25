@@ -139,14 +139,14 @@ For this project, 5 models were considered:
 Initially, the Average Model was used as a baseline to evaluate the performance of other models. Two linear models were then tested to find out whether the problem could be approached linearly. Finally, two non-linear algorithms were evaluated, and the results of all five models are presented below.
 
 ## 7. Machine Learning Performance
+
+### 7.1. Choosing the Algorithm
 The Mean Percentage Error (MAPE) of the linear models was found to be greater than that of the Average Model. As a result, **it can be inferred that this is a nonlinear problem**.
 
-### Single performance
+#### Single performance
 ![image](https://user-images.githubusercontent.com/100521949/233423240-ebe7a310-7153-42b8-9712-1d43c6202d86.png)
 
-Once it was determined that the problem was nonlinear, the next step was to select the appropriate nonlinear algorithm to train for the project. Although the Random Forest Regressor exhibited better performance, I ultimately decided to use the XGBoost Regressor for two reasons. First, as this was a study project, I wanted to gain a deeper understanding of the XGBoost algorithm, since more data was already available on the Random Forest Regressor. Additionally, as the project was deployed on a free cloud service with limited storage space, the smaller size of the XGBoost model made it a more practical choice.
-
-### Real performance - Cross Validation
+#### Real performance - Cross Validation
 ![image](https://user-images.githubusercontent.com/100521949/233425050-d5e1570d-8179-4f25-9f12-4e4ff49a934e.png)
 
 > 📘 Note
@@ -156,6 +156,20 @@ Once it was determined that the problem was nonlinear, the next step was to sele
 > In k-fold cross-validation, the dataset is divided into k equally sized folds. The model is then trained on k-1 of these folds, and the remaining fold is used as the validation set to evaluate the model's performance. This process is repeated k times, with each fold being used once as the validation set.
 >
 > The advantage of cross-validation is that it allows for a more reliable estimate of the model's performance, since it uses all of the data for training and validation. This can help to avoid overfitting or underfitting the model to the dataset.
+
+Once it was determined that the problem was nonlinear, the next step was to select the appropriate nonlinear algorithm to train for the project. Although the Random Forest Regressor exhibited better performance, **I ultimately decided to use the XGBoost Regressor for two reasons. First, as this was a study project, I wanted to gain a deeper understanding of the XGBoost algorithm, since more data was already available on the Random Forest Regressor. Additionally, as the project was deployed on a free cloud service with limited storage space, the smaller size of the XGBoost model made it a more practical choice.**
+
+### 7.2. Evaluating the XGBoost Algorithm.
+
+![image](https://user-images.githubusercontent.com/100521949/234361422-5547ccac-5753-4f05-b5df-756791e429c2.png)
+
+- The first graph illustrates the day-by-day behavior of predictions over a period of six weeks. We can observe that the predicted values are very close to the actual sales values.
+
+- In the second graph, if the value is equal to 1 I have a perfect prediction, for values above 1 the model is overestimating sales, which means that the sales values are higher than expected. While for values below 1 it is underestimating, that is, the predictions are smaller than the actual sales values.
+
+- The third graph displays the error distribution, which is close to a normal distribution, indicating a well-fitted model.
+
+- The last graph is a residual plot that depicts the relationship between predictions and errors. We can see that errors are larger for predictions between 7000 and 10000, but in general, they are below 10%.
 
 
 ## 8. Deployment
@@ -171,11 +185,12 @@ https://user-images.githubusercontent.com/100521949/234054958-b26f7501-ce30-4544
 
 ## 9. Business Results
 
+
+
 ## 10. Conclusion
+Overall, I believe that all the initial goals of the project were successfully achieved. The exploratory data analysis (EDA) provided valuable insights that can be leveraged to enhance the business (I listed some ideas in the Next Steps section below).The trained model performed exceptionally well for over 95% of the stores in the dataset, and the solution is easily accessible from a smartphone or computer device.
 
-## 11. Lessons Learned
-
-## 12. Next Steps
+## 11. Next Steps
 
 The CRISP methodology is designed to deliver prompt solutions for businesses. Therefore, it is essential to assess the efficacy of the solution at the end of each cycle. With input from all stakeholders, it is important to determine whether to proceed with a new cycle or shift focus to a new project.
 
@@ -189,3 +204,4 @@ If the decision is to move forward with a new cycle, here are some recommended n
 - Improve messages on Telegram bot and include a chart or other visualization tool to enhance decision making.
 - Investigate why the model did not perform well for certain stores and address any issues accordingly.
 - As there is a strong correlation between the number of customers in the stores and sales, it would be beneficial to work on a project to predict the number of customers and include this variable in the model.
+- Having a larger assortment does not necessarily result in increased sales. Therefore, a new project can be initiated to identify the top-selling products, and to reduce the stock of lower-performing products. This would lead to a reduction in stock costs while maintaining or potentially even increasing sales.
